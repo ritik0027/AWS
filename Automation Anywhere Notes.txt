@@ -1,0 +1,23 @@
+-------------------------------------------Extract Data From Spreadsheet using Automation Anywhere------------------------------------------
+
+steps to extract single cell data from excel:
+
+1)create variable  to store extracted data - $extractedVal$
+2)open the spreadsheet
+3)extract data
+4)put the extracted data inside a variable
+5)do something with the data - display data in the message box
+6)close the spreadsheet
+
+Conditions:
+
+Active cell - active cell of the excel gets extracted
+specific cell - specific cell of the excel gets extracted
+
+Assign to a variable:
+
+1)user defined variable - which we created - $extractedVal$
+2)system variable - clipboard variable
+
+clipboard variable- stores the value of system clipboard 
+system clipboard - temp storage area for data that user wants to copy from one place to another

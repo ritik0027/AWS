@@ -1,0 +1,23 @@
+{
+  "name": "cognitoauthtutorial",
+  "version": "1.0.0",
+  "description": "this is cognitoAuthTutorial",
+  "keywords": [
+    "cognito"
+  ],
+  "license": "ISC",
+  "author": "ritik kumar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "body-parser": "^1.20.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
