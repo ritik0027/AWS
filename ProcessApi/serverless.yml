@@ -1,0 +1,29 @@
+service: my-lambda-service
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+  stage: dev
+  environment:
+    MONGO_URI: "mongodb+srv://nitikbisht:0s0ZBGH7KM3PLfVC@msldb.pwk1z.mongodb.net/BotMonitoringTool?retryWrites=true&w=majority&appName=MSLdb"
+  deploymentBucket:
+    name: my-lambda-deployment-bucket-1
+
+functions:
+  createProcess:
+    handler: index.handler
+
+    events:
+      - http:
+          path: process
+          method: post
+          cors: true
+  
+  getUpcomingProcesses:
+    handler: getCalender.handler
+    events:
+      - http:
+          path: get-upcoming-processes
+          method: get
+          cors: true
